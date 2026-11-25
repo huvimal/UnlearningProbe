@@ -1,0 +1,15 @@
+{
+  "number": 11,
+  "name": "UnlearningProbe",
+  "short": "Model removal experiment",
+  "summary": "Compare full retraining after record removal with a bounded approximate parameter update.",
+  "profile": "core",
+  "timeout": 600,
+  "scope": "Ridge-regression removal experiment. Parameter agreement and utility are not proof of forgetting or privacy.",
+  "skills": [
+    "Python",
+    "Machine Learning",
+    "Data Processing",
+    "Software Testing"
+  ]
+}

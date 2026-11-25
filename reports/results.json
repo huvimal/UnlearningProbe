@@ -1,0 +1,42 @@
+{
+  "project": "UnlearningProbe",
+  "number": 11,
+  "status": "local_run_passed",
+  "timestamp_utc": "2026-11-20T04:28:57Z",
+  "duration_seconds": 0.15851569175720215,
+  "python": "3.11.9",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "dependencies": {
+    "numpy": "2.4.6",
+    "Pillow": "13.0.0"
+  },
+  "source_sha256": {
+    "common.py": "6824312bac56d81a071760617f624272948f76fcae8190f8168a8911c8f7e8b0",
+    "experiment.py": "a3247b1144b0b6121c926f934b08059721563e6a64cc95a2acdf52bab3fb6108",
+    "run.py": "f59c8f7399ab614d89f8a565b96f60875e75284d439fe5a38bd6837c730dfdbf"
+  },
+  "result": {
+    "original": {
+      "test_rmse": 0.061342806815101056,
+      "removed_record_residual": 1.3142495171950852,
+      "distance_from_retrain": 0.044882622799924984
+    },
+    "full_retrain": {
+      "test_rmse": 0.05752453322876549,
+      "removed_record_residual": 1.632485578920063,
+      "distance_from_retrain": 0.0
+    },
+    "approximate_update": {
+      "test_rmse": 0.05478853879557297,
+      "removed_record_residual": 1.449520341977406,
+      "distance_from_retrain": 0.02640156623795941
+    },
+    "checks": [
+      "Removal changes fitted parameters",
+      "Finite approximate update"
+    ],
+    "scope": "Ridge-regression removal experiment. Parameter agreement and utility are not proof of forgetting or privacy."
+  },
+  "models_used": [],
+  "publication_note": "Local fixture checks passed, not independent validation or user approval. Review this run before publishing."
+}
